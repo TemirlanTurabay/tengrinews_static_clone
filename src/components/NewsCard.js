@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import CommentIcon from '@mui/icons-material/Comment';
 
-export default function NewsCard({image, title, date, views, comments, url}) {
+export default function NewsCard({image, title, date, watches, comments}) {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -28,7 +28,7 @@ export default function NewsCard({image, title, date, views, comments, url}) {
         <CardActions disableSpacing>
           <IconButton aria-label="watched_amount">
             <RemoveRedEyeIcon />
-            <p style={{fontSize: 15}}>{views}</p>
+            <p style={{fontSize: 15}}>{watches}</p>
           </IconButton>
           <IconButton aria-label="comment_amount">
             <CommentIcon />
